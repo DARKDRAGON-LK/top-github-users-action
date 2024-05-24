@@ -12529,8 +12529,8 @@ let git = (function () {
         await git.pull();
     }
     let commit = async function (username, email, message) {
-        await git.addConfig('user.name', 'Lawan Chaamindu Jayalath Samarasekara')
-        await git.addConfig('user.email', 'lawan.chaamindu1234@gmail.com')
+        await git.addConfig('user.name', username)
+        await git.addConfig('user.email', email)
         await git.add('./*')
         await git.commit(message)
     }
