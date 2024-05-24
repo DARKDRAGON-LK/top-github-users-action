@@ -96,7 +96,10 @@ let Index = function () {
             await saveCache(readConfigResponseModel, readCheckpointResponseModel);
             await saveMarkdown(readConfigResponseModel, readCheckpointResponseModel)
             await saveHtml(readConfigResponseModel)
-            if(!readConfigResponseModel.devMode) await commitGit.commit(`Update ${formatMarkdown.capitalizeTheFirstLetterOfEachWord(checkpointCountry)}`);
+            await commitGit.commit(`Update ${formatMarkdown.capitalizeTheFirstLetterOfEachWord(checkpointCountry)}`, {
+        username: "Lawan Chaamindu Jayalath Samarasekara",
+        email: "lawan.chaamindu1234@gmail.com"
+    });
             if(!readConfigResponseModel.devMode) await pushGit.push();
         }
     }
