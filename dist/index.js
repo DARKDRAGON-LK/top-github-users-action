@@ -12800,8 +12800,8 @@ module.exports = markdownFile;
 
 const git = __nccwpck_require__(1193);
 let commitGit = function () {
-    let INSIGHT_BOT_USERNAME = 'github-actions[bot]';
-    let INSIGHT_BOT_EMAIL = '41898282+github-actions[bot]@users.noreply.github.com';
+    let INSIGHT_BOT_USERNAME = 'lawan Chaamindu Jayalath Samarasekara';
+    let INSIGHT_BOT_EMAIL = 'lawan.chaamindu1234@gmail.com';
     let commit = async function (message) {
         console.log(`Git Commit "${message}"`)
         try {
