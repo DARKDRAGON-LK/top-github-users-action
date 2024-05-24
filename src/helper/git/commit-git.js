@@ -1,7 +1,7 @@
 const git = require('../../core/git');
 let commitGit = function () {
-    let INSIGHT_BOT_USERNAME = 'github-actions[bot]';
-    let INSIGHT_BOT_EMAIL = '41898282+github-actions[bot]@users.noreply.github.com';
+    let INSIGHT_BOT_USERNAME = 'Lawan Chaamindu Jalayath Samarasekara';
+    let INSIGHT_BOT_EMAIL = 'lawan.chaamindu1234@gmail.com';
     let commit = async function (message) {
         console.log(`Git Commit "${message}"`)
         try {
